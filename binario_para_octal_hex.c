@@ -1,3 +1,37 @@
+/*
+    Conversão de Binário para Octal e Hexadecimal
+
+    Implemente um programa em C que leia uma string de tamanho n representando um número binário positivo,
+    realize a conversão direta para octal e para hexadecimal, e exiba os resultados.
+
+    Requisitos:
+    - Entrada: o tamanho n da string e a string contendo apenas os caracteres '0' e '1'
+      (sem prefixos e sem espaços).
+    - Armazenamento: manter os dígitos binários em um vetor (char *binario ou char binario[]).
+    - Conversões necessárias:
+        * Binário → Octal
+        * Binário → Hexadecimal
+    - Saída: imprimir o valor em octal e em hexadecimal (A–F em maiúsculas).
+    - Eficiência: realizar conversões diretas por agrupamento de bits; 
+      não converter para decimal como etapa intermediária.
+    - Memória: liberar a string binária após a conversão e impressão dos resultados.
+
+    Assinatura das funções:
+    - char *bin_to_oct(char binario[]): retorna uma nova string com o valor convertido para octal.
+    - char *bin_to_hex(char binario[]): retorna uma nova string com o valor convertido para hexadecimal.
+      OBS: Usar letras maiúsculas (A–F).
+
+    Conversão:
+    - Octal: cada dígito octal corresponde a 3 bits binários.
+    - Hexadecimal: cada dígito hexadecimal corresponde a 4 bits binários.
+
+    Dicas:
+    - Lembre-se do terminador nulo '\0' nas strings.
+    - Garanta a liberação de toda memória alocada dinamicamente.
+    - Para ler a string na próxima linha após ler n, utilize "\n" no scanf:
+        scanf("%d\n", &n);
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
