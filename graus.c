@@ -19,7 +19,6 @@ Entrada:
 Saída:
 - Grau de separação entre as duas pessoas.
 - Caminho percorrido entre elas (ou mensagem se não houver caminho).
-
 */
 
 #include <stdio.h>
